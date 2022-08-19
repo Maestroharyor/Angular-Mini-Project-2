@@ -1,0 +1,9 @@
+<div class="pt-10 flex flex-wrap gap-x-10 gap-y-5">
+  <div
+    *ngFor="let item of items"
+    class="rounded bg-white text-sm border px-3 py-1 border-green-800 cursor-pointer"
+    (click)="handleClick($event)"
+  >
+    {{ item.item }}
+  </div>
+</div>
